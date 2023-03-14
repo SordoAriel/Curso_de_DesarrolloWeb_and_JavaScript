@@ -19,6 +19,7 @@
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -31,22 +32,21 @@
     width: 80%;
     display: flex;
     justify-content: right;
-    align-items: center ;
+   
 }
 .listaNav{
+    margin: auto 10px;
     list-style: none;
     display: flex;
-    
-    
+    justify-content: center;
 }
+
 .linksNavHeader {
     text-decoration: none;
     font-weight: 700;
     color: rgb(0, 0, 0);
     padding: 12px;
     box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
-    
-
     text-align: center;
 }
     
@@ -101,8 +101,8 @@
 
 /*Estilo Main Insumos para la Industria*/
 .marcas{
-    width: 25%;
-    height: 40vh;
+    width: 20%;
+    margin: 2%;
     box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
     border-radius: 10px 10px 10px 10px;
     display: flex;
@@ -112,6 +112,7 @@
 }
 
 .imgIndustria{
+    width: 100%;
     margin: 0 auto;
     padding: 2% 5%;
     display: flex;
@@ -121,17 +122,35 @@
     object-fit: cover;
 }
 
-
 /*Estilo Main Artículos para el Hogar*/
+.tutorialCards{
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
+    border-radius: 10px 10px 10px 10px;
+    line-height: 3;
+    text-align: center;
+}
+
 .italica{
     font-style: italic;
 }
-/*Margenes de los videos: ver en Estilo Main Insumos para la Industria-->.marcas*/
 
 /*Estilos Main Ofertas y promociones*/
 .recuadrosDeOfertas{
     display: inline-block;
     margin: 25px 10%;
+}
+
+/*Estilos Main Contacto*/
+.contact{
+    padding: 10px 20px;
+    text-align: justify;
+    line-height: 2;
+    font-weight: bold; 
+    display: flex;
+    justify-content: space-around;
 }
 
 /*Estilos footer*/
@@ -150,6 +169,17 @@
     justify-content: center;
 }
 
+.networks{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+}
 .navList{
     list-style: none;
 }
@@ -184,4 +214,7 @@
 
 .centeredText{
     text-align: center;
+}
+.underline{
+    text-decoration: underline;
 }

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ferretería Ferros</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/5a711f38dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -35,61 +35,70 @@
             </nav>
         </header>
         <main class="colorFondoMain">
-            <h1 class="títulos">
-                Contacto
-            </h1>
-            <!--Ubicación geográfica-->
-            <section>
-                <h2>
-                    Visitanos
-                </h2>
-                <p>
-                    Podés acercarte a nuestro local, en Av. Rivadavia 3479, C.A.B.A.
-                </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.743693487034!2d-58.41756998527247!3d-34.61064216537053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5b9783ba3%3A0x8122fc41b8be7fe7!2sAv.%20Rivadavia%203479%2C%20C1203AAG%20CABA!5e0!3m2!1ses-419!2sar!4v1676331886189!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <!--Contacto electrónico-->
-            <section>
-                <h2>
-                    Dejanos tu consulta
-                </h2>
-                <p>
-                    Y te responderemos dentro de las 72hs hábiles
-                </p>
-                <form>
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" placeholder="Juan Perez" required>
-                    </div>
-                    <div>
-                        <label for="nombre">Empresa:</label>
-                        <input type="text" placeholder="Ferretería Perez S.A.">
-                    </div>
-                    <div>
-                        <label> Correo de contacto:</label>
-                        <input type="email" placeholder="juanperez@gmail.com" required>
-                    </div>
-                    <div>
-                        <label> Comentario</label>
-                    </div>
-                    <div>                    
-                        <textarea name="comentario" id="comentario" cols="50" rows="20" placeholder="Ingrese un Comentario" required></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar"/>
-                        <input type="reset" value="Limpiar"/>
-                    </div>
-                </form>
-            </section>
+            <div>
+                <img class="imgPrincipalMain" src="../assets/img/ImagenContacto.jpg" alt="Imagen Principal del apartado Contacto">
+            </div>
+                <h1 class="secciónPrincipal títulos">
+                    Contacto
+                </h1>
+                <!--Ubicación geográfica-->
+            <div class="contact">    
+                <section>
+                    <h2 class="underline">
+                        Visitanos
+                    </h2>
+                    <p>
+                        Podés acercarte a nuestro local, en Av. Rivadavia 3479, C.A.B.A.
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.743693487034!2d-58.41756998527247!3d-34.61064216537053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5b9783ba3%3A0x8122fc41b8be7fe7!2sAv.%20Rivadavia%203479%2C%20C1203AAG%20CABA!5e0!3m2!1ses-419!2sar!4v1676331886189!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <!--Contacto electrónico-->
+                <section>
+                    <h2 class="underline">
+                        Dejanos tu consulta
+                    </h2>
+                    <p>
+                        Y te responderemos dentro de las 72hs hábiles
+                    </p>
+                    <form>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" placeholder="Juan Perez" required>
+                        </div>
+                        <div>
+                            <label for="nombre">Empresa:</label>
+                            <input type="text" placeholder="Ferretería Perez S.A.">
+                        </div>
+                        <div>
+                            <label> Correo de contacto:</label>
+                            <input type="email" placeholder="juanperez@gmail.com" required>
+                        </div>
+                        <div>
+                            <label> Comentario</label>
+                        </div>
+                        <div>                    
+                            <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Ingrese un Comentario" required></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar"/>
+                            <input type="reset" value="Limpiar"/>
+                        </div>
+                    </form>
+                </section>
+            </div>
         </main>
         <footer class="propiedadesGeneralesFooter">
-            <p>Todos los derechos reservados</p>
-            <div>
+            <div class="footerText">
                 <p>Dirección: Av. Rivadavia 3479 (C.A.B.A.)</p>
                 <p>Teléfono: 4861-5875</p>
+                <p>Todos los derechos reservados</p>
             </div>
-            <nav class="textAlignRight">
-                <ul>
+            <div class="networks">
+                <a href="https://www.facebook.com/" target="_blank" class="icons"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="icons"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <nav class="navFooter">
+                <ul class="navList">
                      <li>   
                         <a class="linksNavFooter" href="../index.html">Inicio</a>
                     </li>
@@ -108,6 +117,6 @@
                 </ul>        
             </nav>              
         </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        
     </body>
 </html>

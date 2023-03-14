@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ferretería Ferros</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/5a711f38dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -35,8 +35,11 @@
             </nav>
         </header>
         <main class="colorFondoMain">
+            <div>
+                <img class="imgPrincipalMain" src="../assets/img/ImagenHogar.jpg" alt="Imagen Principal del apartado Articulos para el Hogar">
+            </div>
             <!--Descripción de la sección "Artículos para el Hogar"-->
-            <section>
+            <section class="secciónPrincipal">
                 <h1 class="títulos">Artículos para el hogar</h1>
                 <p>
                     Cualquier domicilio, para una habitabilidad ótima, depende de una gran cantidad de objetos. Algunos permanecen invisibles mientras funcionan bien, como los cueritos de la canilla, mientras que otros son más evidentes, como una lamparita. Pero cuando alguno de ellos comienza a fallar, ¡necesitamos una solución!
@@ -50,25 +53,25 @@
             </section>
             <!--Tutoriales para la resolución de tareas domésticas habituales-->
             <section>
-                <h2>
+                <h2 class="secciónPrincipal">
                     Tutoriales
                 </h2>
-                <h3>
+                <h3 class="secciónPrincipal">
                     A continuación, encontrará algunos videos que desarrollan problemas frecuentes en el hogar: de qué se trata, y cómo solucionarlos
                 </h3>
-                <div class="marcas">
+                <div class="tutorialCards">
                     <p class="italica">
                         ¿Pierde la canilla? Probablemente, lo que ocurra es que se gastó el cuerito. Aquí, como acceder a él y cambiarlo:
                     </p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/SJgOdw2RCxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div class="marcas">
+                <div class="tutorialCards">
                     <p> 
                         Si necesitás agujerear tu pared, mejor tené en cuanta estos consejos:
                     </p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9WyX4srJ5dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div class="marcas">    
+                <div class="tutorialCards">    
                     <p>
                         ¿Se te rayó una pared? Mirá el consejo de los expertos de Poximix para arreglarlo:
                     </p>
@@ -77,13 +80,17 @@
             </section>                    
         </main>
         <footer class="propiedadesGeneralesFooter">
-            <p>Todos los derechos reservados</p>
-            <div>
+            <div class="footerText">
                 <p>Dirección: Av. Rivadavia 3479 (C.A.B.A.)</p>
                 <p>Teléfono: 4861-5875</p>
+                <p>Todos los derechos reservados</p>
             </div>
-            <nav class="textAlignRight">
-                <ul>
+            <div class="networks">
+                <a href="https://www.facebook.com/" target="_blank" class="icons"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="icons"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <nav class="navFooter">
+                <ul class="navList">
                      <li>   
                         <a class="linksNavFooter" href="../index.html">Inicio</a>
                     </li>
@@ -102,6 +109,6 @@
                 </ul>        
             </nav>    
         </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        
     </body>
 </html>

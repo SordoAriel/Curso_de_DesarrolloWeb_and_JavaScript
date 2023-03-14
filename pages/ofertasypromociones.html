@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ferretería Ferros</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/5a711f38dc.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -36,12 +36,17 @@
             </nav>
         </header>
         <main class="colorFondoMain">
+            <div>
+                <img class="imgPrincipalMain" src="../assets/img/ImagenOfertas.jpg" alt="Imagen Principal del apartado Ofertas y Promociones">
+            </div>
+            <section class="secciónPrincipal">
             <h1 class="títulos">
                 Ofertas y promociones
             </h1>
             <h2>
                 ¡Conocé nuestras promociones y aprovechá estos precios! 
             </h2>
+            </section>
             <div class="negrita">
                 <!--La idea de esta sección es que las imagenes vayan pasando en el eje horizontal, como está en el wireframe-->
                 <div class="recuadrosDeOfertas">
@@ -67,13 +72,17 @@
             </div>
         </main>
         <footer class="propiedadesGeneralesFooter">
-            <p>Todos los derechos reservados</p>
-            <div>
+            <div class="footerText">
                 <p>Dirección: Av. Rivadavia 3479 (C.A.B.A.)</p>
                 <p>Teléfono: 4861-5875</p>
+                <p>Todos los derechos reservados</p>
             </div>
-            <nav class="textAlignRight">
-                <ul>
+            <div class="networks">
+                <a href="https://www.facebook.com/" target="_blank" class="icons"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="icons"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <nav class="navFooter">
+                <ul class="navList">
                      <li>   
                         <a class="linksNavFooter" href="../index.html">Inicio</a>
                     </li>
@@ -92,6 +101,6 @@
                 </ul>        
             </nav>              
         </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        
     </body>
 </html>
