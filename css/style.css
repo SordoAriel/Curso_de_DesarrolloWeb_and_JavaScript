@@ -297,6 +297,9 @@ ul{
     }
 
     /*Media Queries del Main - Generales*/
+    .imgPrincipalMain{
+        height: 30vh;
+    }
     .secciónPrincipal{
         line-height: 1.5;
         font-weight: 400;  
@@ -310,6 +313,10 @@ ul{
     }
     .fraseCierreIndex{
         font-size: 1.5rem;
+    }
+    /*Media Queries del Main - Index*/
+    .recuadroDeProblemas{
+        height: 20vh;
     }
     /*Media Queries del Footer*/
     .networks{
