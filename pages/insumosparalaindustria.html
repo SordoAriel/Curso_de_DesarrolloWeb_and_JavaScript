@@ -7,34 +7,37 @@
         <title>Ferretería Ferros</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/5a711f38dc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header class="propiedadesGeneralesHeader">
-            <div class="contenedorLogo">
-                <img class="logo" src="../assets/img/logo.png" alt="Logo de Ferretería Ferros">
+        <header class="propiedadesGeneralesHeader container-fluid">
+            <div class="row">
+                <div class="contenedorLogo col-12 col-md-3">
+                    <img class="logo" src="../assets/img/logo.png" alt="Logo de Ferretería Ferros">
+                </div>
+                <nav class="navHeader col-12 col-md-9">
+                    <ul class="listaNav">
+                        <li>
+                            <a class="linksNavHeader" href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="#">Insumos para la INDUSTRIA</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="./articulosparaelhogar.html">Artículos para el HOGAR</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="./ofertasypromociones.html">Ofertas y Promociones</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navHeader">
-                <ul class="listaNav">
-                    <li>
-                        <a class="linksNavHeader" href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="#">Insumos para la INDUSTRIA</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="./articulosparaelhogar.html">Artículos para el HOGAR</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="./ofertasypromociones.html">Ofertas y Promociones</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
-        <main class="colorFondoMain">
+        <main class="colorFondoMain container-fluid">
             <div>
                 <img class="imgPrincipalMain" src="../assets/img/ImagenIndustria.jpg" alt="Imagen Principal del apartado INsumos para la Industria">
             </div>
@@ -97,36 +100,38 @@
                 </div>
             </div>
         </main>
-        <footer class="propiedadesGeneralesFooter">
-            <div class="footerText">
-                <p>Dirección: Av. Rivadavia 3479 (C.A.B.A.)</p>
-                <p>Teléfono: 4861-5875</p>
-                <p>Todos los derechos reservados</p>
-            </div>
-            <div class="networks">
-                <a href="https://www.facebook.com/" target="_blank" class="icons"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/?lang=es" target="_blank" class="icons"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <nav class="navFooter">
-                <ul class="navList">
-                     <li>   
-                        <a class="linksNavFooter" href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="linksNavFooter" href="./insumosparalaindustria.html">Insumos para la INDUSTRIA</a>
-                    </li>
-                    <li>            
-                        <a class="linksNavFooter" href="#">Artículos para el HOGAR</a>
-                    </li>    
-                    <li>    
-                        <a class="linksNavFooter" href="./ofertasypromociones.html">Ofertas y Promociones</a>
-                    </li>        
-                    <li>   
-                        <a class="linksNavFooter" href="./contacto.html">Contacto</a>
-                    </li>                    
-                </ul>        
-            </nav>  
+        <footer class="propiedadesGeneralesFooter container-fluid">
+            <div class="row w-100 justify-content-evenly">
+                <div class="footerText col-12 col-md-4">
+                    <p>Dirección: Av. Rivadavia 3479 (C.A.B.A.)</p>
+                    <p>Teléfono: 4861-5875</p>
+                    <p>Todos los derechos reservados</p>
+                </div>
+                <div class="networks col-12 col-md-4">
+                    <a href="https://www.facebook.com/" target="_blank" class="icons"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" class="icons"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <nav class="navFooter col-12 col-md-4">
+                    <ul class="navList">
+                        <li>   
+                            <a class="linksNavFooter" href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="linksNavFooter" href="./insumosparalaindustria.html">Insumos para la INDUSTRIA</a>
+                        </li>
+                        <li>            
+                            <a class="linksNavFooter" href="#">Artículos para el HOGAR</a>
+                        </li>    
+                        <li>    
+                            <a class="linksNavFooter" href="./ofertasypromociones.html">Ofertas y Promociones</a>
+                        </li>        
+                        <li>   
+                            <a class="linksNavFooter" href="./contacto.html">Contacto</a>
+                        </li>                    
+                    </ul>        
+                </nav>
+            </div>  
         </footer>
-        
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

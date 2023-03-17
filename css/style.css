@@ -10,6 +10,14 @@
     font-family: 'Source Sans Pro', sans-serif;;
 }
 
+body{
+    font-family: 'Source Sans Pro', sans-serif;; 
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #000000;
+}
+
 /*Estilos header*/
 .propiedadesGeneralesHeader {
     background: linear-gradient(90deg,#ccc5bd 0%, #ccb6a7 80%);
@@ -17,22 +25,27 @@
     top: 0;
     z-index: 10;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-.logoContainer {
-    width: 20%;    
-    
+.contenedorLogo{
+    display: flex;
+}
+.logo {
+    width:200px;
+    height: 68px;  
 }
 
 .navHeader{
-    width: 80%;
+    margin: auto 0;
+    height: 40px;
     display: flex;
     justify-content: right;
-   
+}
+
+ul{
+    padding-left: 0;
 }
 .listaNav{
     margin: auto 10px;
@@ -48,6 +61,11 @@
     padding: 12px;
     box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
     text-align: center;
+}
+
+.linksNavHeader:hover{
+    background-color: rgb(71, 80, 80);
+    color: azure;
 }
     
 /*Estilos main en general*/
@@ -84,7 +102,6 @@
 }
 
 .recuadroDeProblemas{
-    width: 20%;
     height: 40vh;
     box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
     border-radius: 10px 10px 10px 10px;
@@ -92,8 +109,12 @@
     flex-direction: column;
     justify-content: center;
 }
+.imgsSecundariasMain{
+    object-fit: cover;
+}
 
 .fraseCierreIndex{
+    text-align: center;
     padding: 30px;
     font-size: 2rem;
     font-style: italic;
@@ -138,23 +159,49 @@
 }
 
 /*Estilos Main Ofertas y promociones*/
-.recuadrosDeOfertas{
-    display: inline-block;
-    margin: 25px 10%;
+
+.row{
+    margin-bottom: calc(var(--bs-gutter-y) * -1);
+}
+.carouselContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+.carousel-item{
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.imgCarouselOffer{
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+.carousel-caption{
+    color: #000000;
+}
+
+.buyingLink{
+    padding: 5px;
+    background-color: #bdacaf;
+    text-decoration: none;
+    color: #444141;
+    border: solid rgb(43, 40, 40) 2px ;
 }
 
 /*Estilos Main Contacto*/
-.contact{
-    padding: 10px 20px;
-    text-align: justify;
-    line-height: 2;
-    font-weight: bold; 
+.forms{
+    margin-bottom: 15px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 /*Estilos footer*/
 .propiedadesGeneralesFooter {
+    
     background: linear-gradient(90deg,#ccc5bd 0%, #ccb6a7 80%);
     border-top: 2px solid #000000;
     display: flex;
@@ -167,6 +214,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .networks{
@@ -180,15 +228,18 @@
     text-decoration: none;
     font-size: 30px;
 }
+
+.navFooter{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navList{
     list-style: none;
 }
 
-.NavFooter{
-    font-size: 10px;
-    display: flex;
-    justify-content: right;
-}
 .linksNavFooter{
     text-decoration: none;
     font-size: 0.5rem;
@@ -217,4 +268,54 @@
 }
 .underline{
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    /*Media Queries del Header*/
+    .logo{
+        margin: 0 auto;
+    }
+    .navHeader{
+        height: 70px;
+        justify-content: center;
+        
+    }
+    .linksNavHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        font-size: 0.65rem;
+    }
+
+    /*Media Queries del Main - Generales*/
+    .secciónPrincipal{
+        line-height: 1.5;
+        font-weight: 400;  
+    }
+    .títulos{
+        font-size: 1.5rem;
+    }
+    .negrita{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .fraseCierreIndex{
+        font-size: 1.5rem;
+    }
+    /*Media Queries del Footer*/
+    .networks{
+        width: 50%;
+        margin: 1rem;
+
+    }
+    .navFooter{
+        margin: 1rem;
+    }
+    .map{
+        width: 300px;
+        height: 300px;
+        
+    }
 }

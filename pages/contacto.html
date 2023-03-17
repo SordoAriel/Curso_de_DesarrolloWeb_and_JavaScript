@@ -7,34 +7,37 @@
         <title>Ferretería Ferros</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/5a711f38dc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header class="propiedadesGeneralesHeader">
-            <div class="contenedorLogo">
-                <img class="logo" src="../assets/img/logo.png" alt="Logo de Ferretería Ferros">
+        <header class="propiedadesGeneralesHeader container-fluid">
+            <div class="row">
+                <div class="contenedorLogo col-12 col-md-3">
+                    <img class="logo" src="../assets/img/logo.png" alt="Logo de Ferretería Ferros">
+                </div>
+                <nav class="navHeader col-12 col-md-9">
+                    <ul class="listaNav">
+                        <li>
+                            <a class="linksNavHeader" href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="./insumosparalaindustria.html">Insumos para la INDUSTRIA</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="./articulosparaelhogar.html">Artículos para el HOGAR</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="./ofertasypromociones.html">Ofertas y Promociones</a>
+                        </li>
+                        <li>
+                            <a class="linksNavHeader" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navHeader">
-                <ul class="listaNav">
-                    <li>
-                        <a class="linksNavHeader" href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="./insumosparalaindustria.html">Insumos para la INDUSTRIA</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="./articulosparaelhogar.html">Artículos para el HOGAR</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="./ofertasypromociones.html">Ofertas y Promociones</a>
-                    </li>
-                    <li>
-                        <a class="linksNavHeader" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
-        <main class="colorFondoMain">
+        <main class="colorFondoMain container-fluid">
             <div>
                 <img class="imgPrincipalMain" src="../assets/img/ImagenContacto.jpg" alt="Imagen Principal del apartado Contacto">
             </div>
@@ -42,18 +45,18 @@
                     Contacto
                 </h1>
                 <!--Ubicación geográfica-->
-            <div class="contact">    
-                <section>
+            <div class="contact row">    
+                <section class="forms col-12 col-md-6">
                     <h2 class="underline">
                         Visitanos
                     </h2>
                     <p>
                         Podés acercarte a nuestro local, en Av. Rivadavia 3479, C.A.B.A.
                     </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.743693487034!2d-58.41756998527247!3d-34.61064216537053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5b9783ba3%3A0x8122fc41b8be7fe7!2sAv.%20Rivadavia%203479%2C%20C1203AAG%20CABA!5e0!3m2!1ses-419!2sar!4v1676331886189!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.743693487034!2d-58.41756998527247!3d-34.61064216537053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5b9783ba3%3A0x8122fc41b8be7fe7!2sAv.%20Rivadavia%203479%2C%20C1203AAG%20CABA!5e0!3m2!1ses-419!2sar!4v1676331886189!5m2!1ses-419!2sar" class="map justify-content-center" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
                 <!--Contacto electrónico-->
-                <section>
+                <section class="forms col-12 col-md-6">
                     <h2 class="underline">
                         Dejanos tu consulta
                     </h2>
@@ -77,7 +80,7 @@
                             <label> Comentario</label>
                         </div>
                         <div>                    
-                            <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Ingrese un Comentario" required></textarea>
+                            <textarea name="comentario" id="comentario" cols="40" rows="10" placeholder="Ingrese un Comentario" required></textarea>
                         </div>
                         <div>
                             <input type="submit" value="Enviar"/>
@@ -87,36 +90,38 @@
                 </section>
             </div>
         </main>
-        <footer class="propiedadesGeneralesFooter">
-            <div class="footerText">
-                <p>Dirección: Av. Rivadavia 3479 (C.A.B.A.)</p>
-                <p>Teléfono: 4861-5875</p>
-                <p>Todos los derechos reservados</p>
-            </div>
-            <div class="networks">
-                <a href="https://www.facebook.com/" target="_blank" class="icons"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/?lang=es" target="_blank" class="icons"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <nav class="navFooter">
-                <ul class="navList">
-                     <li>   
-                        <a class="linksNavFooter" href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="linksNavFooter" href="./insumosparalaindustria.html">Insumos para la INDUSTRIA</a>
-                    </li>
-                    <li>            
-                        <a class="linksNavFooter" href="./articulosparaelhogar.html">Artículos para el HOGAR</a>
-                    </li>    
-                    <li>    
-                        <a class="linksNavFooter" href="./ofertasypromociones.html">Ofertas y Promociones</a>
-                    </li>        
-                    <li>   
-                        <a class="linksNavFooter" href="#">Contacto</a>
-                    </li>                    
-                </ul>        
-            </nav>              
+        <footer class="propiedadesGeneralesFooter container-fluid">
+            <div class="row w-100 justify-content-evenly">
+                <div class="footerText col-12 col-md-4">
+                    <p>Dirección: Av. Rivadavia 3479 (C.A.B.A.)</p>
+                    <p>Teléfono: 4861-5875</p>
+                    <p>Todos los derechos reservados</p>
+                </div>
+                <div class="networks col-12 col-md-4">
+                    <a href="https://www.facebook.com/" target="_blank" class="icons"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" class="icons"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <nav class="navFooter col-12 col-md-4">
+                    <ul class="navList">
+                        <li>   
+                            <a class="linksNavFooter" href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="linksNavFooter" href="./insumosparalaindustria.html">Insumos para la INDUSTRIA</a>
+                        </li>
+                        <li>            
+                            <a class="linksNavFooter" href="./articulosparaelhogar.html">Artículos para el HOGAR</a>
+                        </li>    
+                        <li>    
+                            <a class="linksNavFooter" href="./ofertasypromociones.html">Ofertas y Promociones</a>
+                        </li>        
+                        <li>   
+                            <a class="linksNavFooter" href="#">Contacto</a>
+                        </li>                    
+                    </ul>        
+                </nav>
+            </div>              
         </footer>
-        
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
