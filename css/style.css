@@ -314,22 +314,22 @@ ul{
     .fraseCierreIndex{
         font-size: 1.5rem;
     }
+
     /*Media Queries del Main - Index*/
     .recuadroDeProblemas{
         height: 20vh;
     }
+
     /*Media Queries del Footer*/
     .networks{
         width: 50%;
         margin: 1rem;
-
     }
     .navFooter{
         margin: 1rem;
     }
     .map{
-        width: 200px;
+        width: 300px;
         height: 300px;
-        
     }
 }
