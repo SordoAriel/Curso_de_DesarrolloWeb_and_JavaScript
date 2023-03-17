@@ -166,16 +166,14 @@ ul{
 .carouselContainer{
     width: 70%;
     margin: 0 auto;
-}
-.carousel-item{
-    margin: 0 auto;
     height: 80vh;
+    
 }
 
 .imgCarouselOffer{
     margin: 0 auto;
     width: 70%;
-    height: 70%;
+    height: 70vh;
     object-fit: cover;
 }
 .carousel-caption{
@@ -188,6 +186,15 @@ ul{
     text-decoration: none;
     color: #444141;
     border: solid rgb(43, 40, 40) 2px ;
+    border-radius: 20px;
+}
+.buyingText{
+    padding: 5px;
+    background-color: #bdacaf;
+    text-decoration: none;
+    color: #444141;
+    border-bottom: solid #444141 2px;
+    border-top: solid #444141 2px;
 }
 
 /*Estilos Main Contacto*/
