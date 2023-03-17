@@ -317,9 +317,23 @@ ul{
 
     /*Media Queries del Main - Index*/
     .recuadroDeProblemas{
-        height: 20vh;
+        height: 30vh;
+    }
+/*Media Queries del Main - Articulos para el Hogar*/
+.tutorialCards{
+    width: 95%;
+    margin: 2px auto;
+    }
+    .video{
+        width: 300px;
+        height: 300px;
     }
 
+    /*Media Queries del Main - Contacto*/
+    .map{
+        width: 300px;
+        height: 300px;
+    }
     /*Media Queries del Footer*/
     .networks{
         width: 50%;
@@ -328,8 +342,5 @@ ul{
     .navFooter{
         margin: 1rem;
     }
-    .map{
-        width: 300px;
-        height: 300px;
-    }
+   
 }
