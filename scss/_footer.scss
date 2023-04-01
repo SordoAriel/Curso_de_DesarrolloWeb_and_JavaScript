@@ -1,0 +1,75 @@
+/*Estilos footer*/
+
+/*Animaciones iconos*/
+@keyframes facebook {
+    0%{ transform: translateY(0)}
+    25%{ transform: translateY(-50%)}
+    50%{ transform: translateY(0)}
+    75%{ transform: translateY(50%)}
+    100%{ transform: translateY(0)}
+}
+@keyframes twitter {
+    0%{ transform: translateY(0)}
+    25%{ transform: translateY(50%)}
+    50%{ transform: translateY(0)}
+    75%{ transform: translateY(-50%)}
+    100%{ transform: translateY(0)}
+}
+
+.propiedadesGeneralesFooter {
+    background: $secundary-bgcolor;
+    border-top: 2px solid $black;
+    display: flex;
+    justify-content: space-between;
+    .footerText{
+        padding: 20px;
+        font-size: map-get($font-size, font-08rem);
+        @include flex(column,$center,$center);
+    }
+    .networks{
+        width: 10%;
+        @include flex(row,space-between,$center);
+        .iconFb{
+            color: $black;
+            text-decoration: none;
+            font-size: map-get($font-size, font-30px);
+            animation: facebook infinite 7s ease-in-out;
+            animation-delay: 0;
+        }
+        .iconTwitter{
+            color: $black;
+            text-decoration: none;
+            font-size: map-get($font-size, font-30px);
+            animation: twitter infinite 7s ease;
+            animation-delay: 0;
+        }
+    }
+    .navFooter{
+        font-size: map-get($font-size, font-10px);
+        @include flex(row,$center,$center);
+        .navList{
+            list-style: none;
+            .linksNavFooter{
+                text-decoration: none;
+                font-size: map-get($font-size, font-05rem);
+                font-weight: bold;
+                text-align: $right;
+                color: $black;
+                margin: 0 10px;
+            }
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    /*Media Queries del Footer*/
+    .propiedadesGeneralesFooter {
+        .networks{
+            width: 50%;
+            margin: 1rem;
+        }
+        .navFooter{
+            margin: 1rem;
+        }
+    }
+}

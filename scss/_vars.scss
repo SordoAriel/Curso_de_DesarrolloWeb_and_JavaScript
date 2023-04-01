@@ -1,0 +1,27 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+/*Colors*/
+$primary-bgcolor: radial-gradient(circle farthest-corner at bottom right, #9b8488 0%, #afa0a0 20%);
+$secundary-bgcolor: linear-gradient(90deg, #ccc5bd 0%, #ccb6a7 80%);
+$black: black;
+$grey:rgba(141, 141, 141, 0.8);
+/*Botones de Contacto*/
+$button-color: #c4bdaf;
+$button-color-hover: #a59f92;
+/*Ubication*/
+$right: right;
+$center: center;
+$left: left;
+/*Cards*/
+$border-shadow-cards: 0px 0px 8px 0px rgba(112, 112, 112, 0.8);
+$border-radius-cards: 10px 10px 10px 10px;
+/*Maps*/
+$font-size: (
+    font-05rem: 0.5rem,
+    font-08rem: 0.8rem,
+    font-1rem: 1rem,
+    font-15rem: 1.5rem,
+    font-2rem: 2rem,
+    font-10px: 10px,
+    font-30px: 30px,
+)

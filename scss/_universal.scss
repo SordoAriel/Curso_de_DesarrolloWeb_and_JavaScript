@@ -1,0 +1,31 @@
+/*Fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/*Estilos transversales*/
+.textAlignRight{
+    text-align: $right;
+}
+.títulos{
+    text-decoration: underline;
+    font-size: map-get($font-size, font-2rem);
+}
+.negrita{
+    font-weight: 900;
+    font-size: map-get($font-size, font-15rem);
+}
+.centeredText{
+    text-align: $center;
+}
+.underline{
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .títulos{
+        font-size: map-get($font-size, font-15rem);
+    }
+    .negrita{
+        font-weight: 400;
+        font-size: map-get($font-size, font-1rem);
+    }     
+}

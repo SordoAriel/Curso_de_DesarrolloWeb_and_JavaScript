@@ -1,346 +1,430 @@
+@charset "UTF-8";
 /*Fuentes*/
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-
-/*Universal*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;;
-}
-
-body{
-    font-family: 'Source Sans Pro', sans-serif;; 
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: normal;
-    color: #000000;
-}
-
-/*Estilos header*/
-.propiedadesGeneralesHeader {
-    background: linear-gradient(90deg,#ccc5bd 0%, #ccb6a7 80%);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contenedorLogo{
-    display: flex;
-}
-.logo {
-    width:200px;
-    height: 68px;  
-}
-
-.navHeader{
-    margin: auto 0;
-    height: 40px;
-    display: flex;
-    justify-content: right;
-}
-
-ul{
-    padding-left: 0;
-}
-.listaNav{
-    margin: auto 10px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.linksNavHeader {
-    text-decoration: none;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    padding: 12px;
-    box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
-    text-align: center;
-}
-
-.linksNavHeader:hover{
-    background-color: rgb(71, 80, 80);
-    color: azure;
-}
-    
-/*Estilos main en general*/
-
-.colorFondoMain {
-    background: radial-gradient(circle farthest-corner at bottom right, #9b8488 0%, #afa0a0 20%);
-    
-}
-
-/*Estilo Main Index*/
-.imgPrincipalMain{
-    width: 100%;
-    height: 75vh;
-    margin: 0 auto;
-    padding: 2% 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-}
-.secciónPrincipal{
-    padding: 10px 20px;
-    text-align: justify;
-    line-height: 2;
-    font-weight: bold;  
-}
-
-.gallery{
-    padding: 50px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.recuadroDeProblemas{
-    height: 40vh;
-    box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.imgsSecundariasMain{
-    object-fit: cover;
-}
-
-.fraseCierreIndex{
-    text-align: center;
-    padding: 30px;
-    font-size: 2rem;
-    font-style: italic;
-}
-
-/*Estilo Main Insumos para la Industria*/
-.marcas{
-    width: 20%;
-    margin: 2%;
-    box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    object-fit: cover;
-}
-
-.imgIndustria{
-    width: 100%;
-    margin: 0 auto;
-    padding: 2% 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-}
-
-/*Estilo Main Artículos para el Hogar*/
-.tutorialCards{
-    width: 60%;
-    margin: 20px auto;
-    padding: 10px;
-    box-shadow: 0px 0px 8px 0px rgba(112,112,112,0.8);
-    border-radius: 10px 10px 10px 10px;
-    line-height: 3;
-    text-align: center;
-}
-
-.italica{
-    font-style: italic;
-}
-
-/*Estilos Main Ofertas y promociones*/
-
-.row{
-    margin-bottom: calc(var(--bs-gutter-y) * -1);
-}
-.carouselContainer{
-    width: 70%;
-    margin: 0 auto;
-    height: 80vh;
-    
-}
-
-.imgCarouselOffer{
-    margin: 0 auto;
-    width: 70%;
-    height: 70vh;
-    object-fit: cover;
-}
-.carousel-caption{
-    color: #000000;
-}
-
-.buyingLink{
-    padding: 5px;
-    background-color: #bdacaf;
-    text-decoration: none;
-    color: #444141;
-    border: solid rgb(43, 40, 40) 2px ;
-    border-radius: 20px;
-}
-.buyingText{
-    padding: 5px;
-    background-color: #bdacaf;
-    text-decoration: none;
-    color: #444141;
-    border-bottom: solid #444141 2px;
-    border-top: solid #444141 2px;
-}
-
-/*Estilos Main Contacto*/
-.forms{
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-/*Estilos footer*/
-.propiedadesGeneralesFooter {
-    
-    background: linear-gradient(90deg,#ccc5bd 0%, #ccb6a7 80%);
-    border-top: 2px solid #000000;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footerText{
-    padding: 20px;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.networks{
-    width: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.icons{
-    color: #000000;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.navFooter{
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navList{
-    list-style: none;
-}
-
-.linksNavFooter{
-    text-decoration: none;
-    font-size: 0.5rem;
-    font-weight: bold;
-    text-align: right;
-    color: rgb(0, 0, 0);
-    margin: 0 10px;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+/*Colors*/
+/*Botones de Contacto*/
+/*Ubication*/
+/*Cards*/
+/*Maps*/
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 /*Estilos transversales*/
-.textAlignRight{
-    text-align: right;
-}
-.títulos{
-    text-decoration: underline;
-    font-size: 2rem;
-    
-}
-.negrita{
-    font-weight: 900;
-    font-size: 1.5rem;
+.textAlignRight {
+  text-align: right;
 }
 
-.centeredText{
-    text-align: center;
+.títulos {
+  text-decoration: underline;
+  font-size: 2rem;
 }
-.underline{
-    text-decoration: underline;
+
+.negrita {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.centeredText {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    /*Media Queries del Header*/
-    .logo{
-        margin: 0 auto;
-    }
-    .navHeader{
-        height: 70px;
-        justify-content: center;
-        
-    }
-    .linksNavHeader{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 60px;
-        font-size: 0.65rem;
-    }
-
-    /*Media Queries del Main - Generales*/
-    .imgPrincipalMain{
-        height: 30vh;
-    }
-    .secciónPrincipal{
-        line-height: 1.5;
-        font-weight: 400;  
-    }
-    .títulos{
-        font-size: 1.5rem;
-    }
-    .negrita{
-        font-weight: 400;
-        font-size: 1rem;
-    }
-    .fraseCierreIndex{
-        font-size: 1.5rem;
-    }
-
-    /*Media Queries del Main - Index*/
-    .recuadroDeProblemas{
-        height: 30vh;
-    }
-/*Media Queries del Main - Articulos para el Hogar*/
-.tutorialCards{
-    width: 95%;
-    margin: 2px auto;
-    }
-    .video{
-        width: 300px;
-        height: 300px;
-    }
-
-    /*Media Queries del Main - Contacto*/
-    .map{
-        width: 300px;
-        height: 300px;
-    }
-    /*Media Queries del Footer*/
-    .networks{
-        width: 50%;
-        margin: 1rem;
-    }
-    .navFooter{
-        margin: 1rem;
-    }
-   
+  .títulos {
+    font-size: 1.5rem;
+  }
+  .negrita {
+    font-weight: 400;
+    font-size: 1rem;
+  }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Estilos del body corregidos a BS*/
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: normal;
+  color: #000000;
+}
+
+/*Estilos main en general*/
+.colorFondoMain {
+  background: radial-gradient(circle farthest-corner at bottom right, #9b8488 0%, #afa0a0 20%);
+}
+.colorFondoMain .imgPrincipalMain {
+  width: 100%;
+  height: 75vh;
+  z-index: 9;
+  margin: 0 auto;
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.colorFondoMain .secciónPrincipal {
+  padding: 10px 25px;
+  text-align: justify;
+  line-height: 2;
+  font-weight: bold;
+}
+.colorFondoMain .gallery {
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .imgPrincipalMain {
+    height: 30vh;
+  }
+  .secciónPrincipal {
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+/*Estilos header*/
+.propiedadesGeneralesHeader {
+  background: linear-gradient(90deg, #ccc5bd 0%, #ccb6a7 80%);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.propiedadesGeneralesHeader .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.propiedadesGeneralesHeader .navbar .container-fluid {
+  padding: 0;
+}
+.propiedadesGeneralesHeader .navbar .container-fluid .navbar-brand {
+  padding: 0;
+}
+.propiedadesGeneralesHeader .navbar .container-fluid .navbar-brand .logo {
+  width: 200px;
+  height: 68px;
+}
+.propiedadesGeneralesHeader .navbar .container-fluid .navHeader {
+  margin: auto 0;
+  display: flex;
+  justify-content: right;
+}
+.propiedadesGeneralesHeader .navbar .container-fluid .navHeader .linksNavHeader {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  box-shadow: 0px 0px 8px 0px rgba(141, 141, 141, 0.8);
+  text-align: center;
+}
+.propiedadesGeneralesHeader .navbar .container-fluid .navHeader .linksNavHeader:hover {
+  background-color: rgba(141, 141, 141, 0.8);
+}
+
+/*Estilo Main Index*/
+/*Animaciones*/
+@keyframes screwRolling1 {
+  0% {
+    transform: traslateY(0%);
+  }
+  50% {
+    transform: traslateZ(-100%);
+  }
+  100% {
+    transform: translateY(-550%);
+  }
+}
+@keyframes screwRolling2 {
+  0% {
+    transform: traslateY(0%);
+  }
+  50% {
+    transform: traslateZ(-100%);
+  }
+  100% {
+    transform: translateY(-500%);
+  }
+}
+.screwPosition1 {
+  position: relative;
+  left: 72%;
+  bottom: 21vh;
+  animation: screwRolling1 infinite 7s ease-out;
+  animation-delay: 0;
+}
+
+.screwPosition2 {
+  position: relative;
+  left: 70%;
+  bottom: 24vh;
+  animation: screwRolling2 infinite 7s ease-out;
+  animation-delay: 0;
+}
+
+.recuadroDeProblemas, .marcas {
+  margin: 5px;
+  padding: 2px;
+  width: 20%;
+  box-shadow: 0px 0px 8px 0px rgba(112, 112, 112, 0.8);
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recuadroDeProblemas .imgsSecundariasMain, .marcas .imgsSecundariasMain {
+  margin-top: 5px;
+  object-fit: cover;
+}
+
+.fraseCierreIndex {
+  text-align: center;
+  padding: 30px;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .screwPosition1 {
+    display: none;
+  }
+  .screwPosition2 {
+    display: none;
+  }
+  .recuadroDeProblemas, .marcas {
+    width: 40%;
+  }
+  .fraseCierreIndex {
+    font-size: 1.5rem;
+  }
+}
+/*Estilo Main Insumos para la Industria*/
+.marcas {
+  object-fit: cover;
+}
+.marcas .imgIndustria {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .marcas {
+    width: 40%;
+  }
+}
+/*Estilo Main Artículos para el Hogar*/
+.tutorialCards {
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(112, 112, 112, 0.8);
+  border-radius: 10px 10px 10px 10px;
+  line-height: 3;
+  text-align: center;
+}
+.tutorialCards .italica {
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .tutorialCards {
+    line-height: 1.5;
+  }
+  .tutorialCards iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  iframe {
+    width: 200px;
+    height: 200px;
+  }
+}
+/*Estilos Main Ofertas y promociones*/
+.carouselContainer {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carouselContainer .carousel-item {
+  margin-top: 10px;
+  height: 90vh;
+}
+.carouselContainer .carousel-item .imgCarouselOffer {
+  margin: 0 auto;
+  margin-bottom: 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 5;
+}
+.carouselContainer .carousel-item .carousel-caption {
+  color: black;
+}
+.carouselContainer .carousel-item .buyingText {
+  padding: 5px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  background-color: #d4d0d1;
+  border: solid black 1px;
+  border-radius: 20px;
+  z-index: 8;
+}
+.carouselContainer .carousel-item .buyingText .buyingLink {
+  color: black;
+  text-decoration: none;
+}
+.carouselContainer .carousel-item .buyingText:hover {
+  background-color: #a19d9e;
+  color: black;
+  border: solid black 2px;
+}
+
+/*Estilos Main Contacto*/
+.forms {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forms .btn-primary {
+  color: black;
+  background-color: #c4bdaf;
+  border-color: black;
+}
+.forms .btn-primary:hover {
+  color: black;
+  background-color: #a59f92;
+  border-color: black;
+}
+
+@media (max-width: 768px) {
+  .map {
+    width: 300px;
+    height: 300px;
+  }
+}
+/*Estilos footer*/
+/*Animaciones iconos*/
+@keyframes facebook {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes twitter {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(50%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.propiedadesGeneralesFooter {
+  background: linear-gradient(90deg, #ccc5bd 0%, #ccb6a7 80%);
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.propiedadesGeneralesFooter .footerText {
+  padding: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.propiedadesGeneralesFooter .networks {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.propiedadesGeneralesFooter .networks .iconFb {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  animation: facebook infinite 7s ease-in-out;
+  animation-delay: 0;
+}
+.propiedadesGeneralesFooter .networks .iconTwitter {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  animation: twitter infinite 7s ease;
+  animation-delay: 0;
+}
+.propiedadesGeneralesFooter .navFooter {
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.propiedadesGeneralesFooter .navFooter .navList {
+  list-style: none;
+}
+.propiedadesGeneralesFooter .navFooter .navList .linksNavFooter {
+  text-decoration: none;
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-align: right;
+  color: black;
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  /*Media Queries del Footer*/
+  .propiedadesGeneralesFooter .networks {
+    width: 50%;
+    margin: 1rem;
+  }
+  .propiedadesGeneralesFooter .navFooter {
+    margin: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

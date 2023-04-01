@@ -1,0 +1,11 @@
+{
+  "name": "ferreteriaferros",
+  "version": "1.0.0",
+  "description": "pagina ferreteriaferros en curso de desarrollo web coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ariel Sordo",
+  "license": "ISC"
+}

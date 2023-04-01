@@ -1,0 +1,8 @@
+/* Estilos del body corregidos a BS*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;; 
+    font-size: map-get($font-size, font-1rem);
+    font-weight: normal;
+    line-height: normal;
+    color: #000000;
+}

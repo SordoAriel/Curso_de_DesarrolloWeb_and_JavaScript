@@ -1,0 +1,63 @@
+/*Estilo Main Index*/
+
+/*Animaciones*/
+@keyframes screwRolling1 {
+    0%{ transform: traslateY(0%)}
+    50%{ transform: traslateZ(-100%)}
+    100%{ transform:translateY(-550%) }
+}
+@keyframes screwRolling2 {
+    0%{ transform: traslateY(0%)}
+    50%{ transform: traslateZ(-100%)}
+    100%{ transform:translateY(-500%) }
+}
+.screwPosition1{
+    position: relative;
+    left: 72%;
+    bottom: 21vh;
+    animation: screwRolling1 infinite 7s ease-out;
+    animation-delay: 0;
+}
+.screwPosition2{
+    position: relative;
+    left: 70%;
+    bottom: 24vh;
+    animation: screwRolling2 infinite 7s ease-out;
+    animation-delay: 0;
+}
+
+.recuadroDeProblemas{
+        margin: 5px;
+        padding: 2px;
+        width: 20%;
+        box-shadow: $border-shadow-cards;
+        border-radius: $border-radius-cards;
+        display: flex;
+        flex-direction: column;
+        justify-content: $center;
+        .imgsSecundariasMain{
+            margin-top: 5px;
+            object-fit: cover;
+        }
+    }
+.fraseCierreIndex{
+    text-align: $center;
+    padding: 30px;
+    font-size: map-get($font-size, font-2rem);
+    font-style: italic;
+}
+@media (max-width: 992px) {
+    .screwPosition1{
+        display: none;
+    }
+    .screwPosition2{
+        display: none;
+    }
+    .recuadroDeProblemas{
+        width: 40%;
+    }
+    .fraseCierreIndex{
+        font-size: map-get($font-size, font-15rem);
+
+    }
+}

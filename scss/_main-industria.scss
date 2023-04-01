@@ -1,0 +1,19 @@
+/*Estilo Main Insumos para la Industria*/
+.marcas{
+    @extend .recuadroDeProblemas;
+    object-fit: cover;
+    .imgIndustria{
+        width: 100%;
+        margin: 0 auto;
+        padding: 2% 5%;
+        @include flex(column,$center,$center);
+        object-fit: cover;
+    }
+}
+@media (max-width: 992px) {
+    .marcas{
+        width: 40%;
+    }
+   
+}
+  
