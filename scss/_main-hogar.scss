@@ -7,12 +7,14 @@
     border-radius: $border-radius-cards;
     line-height: 3;
     text-align: $center;
+    @include flex(column,$center,$center);
     .italica{
         font-style: italic;
     }
 }
 @media (max-width: 992px) {
     .tutorialCards{
+        width: 100%;
         line-height: 1.5;
         iframe{
             width:300px; 
@@ -22,7 +24,7 @@
 }
 @media (max-width:768px){
     iframe{
-        width:200px; 
-        height:200px;
+        width:100px; 
+        height:100px;
     } 
 }
