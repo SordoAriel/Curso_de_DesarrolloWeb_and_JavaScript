@@ -1,0 +1,33 @@
+
+.bgImage404{
+    background-image: url(../assets/img/error.jpg);
+    background-size: cover;
+    height: 69vh;
+    color: azure;
+    .txt404{
+        padding-top: 6%;
+        padding-left: 13%;
+        font-size: 2rem;
+        font-weight: 400;
+        .h404{
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+        .títulos{
+            text-decoration: none;
+            font-weight: bolder;
+        }
+    }
+}
+@media (max-width: 768px){
+    .bgImage404{
+        background-image: url(../assets/img/error_chica.jpg);
+        .txt404{
+            font-size: 1rem;
+            .h404{
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+}
