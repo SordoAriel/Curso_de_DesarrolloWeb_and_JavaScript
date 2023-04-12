@@ -39,10 +39,19 @@
         }
     }
 }
-
-
-
-
-
-
-
+@media (max-width: 992px) {
+    .carouselContainer{
+        .carousel-item{
+            height: 60vh;
+            .imgCarouselOffer{
+                margin: 0 auto;
+                margin-top: 70px;
+                width: 80%;
+                height:60%;
+                object-fit: cover;
+                z-index: 5;
+                
+            }
+        }
+    }
+}

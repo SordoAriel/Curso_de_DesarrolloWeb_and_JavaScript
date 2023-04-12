@@ -327,6 +327,19 @@ body {
   border: solid black 2px;
 }
 
+@media (max-width: 992px) {
+  .carouselContainer .carousel-item {
+    height: 60vh;
+  }
+  .carouselContainer .carousel-item .imgCarouselOffer {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    z-index: 5;
+  }
+}
 /*Estilos Main Contacto*/
 .forms {
   margin-bottom: 15px;
@@ -358,13 +371,13 @@ body {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(-10%);
+    transform: translateY(-25%);
   }
   50% {
     transform: translateY(0);
   }
   75% {
-    transform: translateY(10%);
+    transform: translateY(25%);
   }
   100% {
     transform: translateY(0);
@@ -375,13 +388,13 @@ body {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(10%);
+    transform: translateY(25%);
   }
   50% {
     transform: translateY(0);
   }
   75% {
-    transform: translateY(-10%);
+    transform: translateY(-25%);
   }
   100% {
     transform: translateY(0);

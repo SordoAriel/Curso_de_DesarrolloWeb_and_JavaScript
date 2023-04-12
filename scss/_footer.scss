@@ -3,16 +3,16 @@
 /*Animaciones iconos*/
 @keyframes facebook {
     0%{ transform: translateY(0)}
-    25%{ transform: translateY(-10%)}
+    25%{ transform: translateY(-25%)}
     50%{ transform: translateY(0)}
-    75%{ transform: translateY(10%)}
+    75%{ transform: translateY(25%)}
     100%{ transform: translateY(0)}
 }
 @keyframes twitter {
     0%{ transform: translateY(0)}
-    25%{ transform: translateY(10%)}
+    25%{ transform: translateY(25%)}
     50%{ transform: translateY(0)}
-    75%{ transform: translateY(-10%)}
+    75%{ transform: translateY(-25%)}
     100%{ transform: translateY(0)}
 }
 
