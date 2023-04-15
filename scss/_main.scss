@@ -2,49 +2,54 @@
 
 .colorFondoMain {
     background: $primary-bgcolor;
-    .imgPrincipalMain{
-        width: 100%;
-        height: 75vh;
-        z-index: 9;
-        margin: 0 auto;
-        padding: 2% 5%;
-        @include flex(column,$center,$center);
-        object-fit: cover;
-    }
-    .imgPrincipalMainMobile{
-        display: none;
-    }
-    .secciónPrincipal{
-        padding: 20px 80px;
-        text-align: justify;
-        line-height: 2;
-        font-weight: bold;  
-    }
-    .gallery{
-        padding: 30px 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-}
-@media (max-width: 768px) {
-    .colorFondoMain{
+    .row{
+        margin: 0;
         .imgPrincipalMain{
-        display: none;
-        }
-        .imgPrincipalMainMobile{
             width: 100%;
-            height: 50vh;
+            height: 75vh;
             z-index: 9;
             margin: 0 auto;
             padding: 2% 5%;
             @include flex(column,$center,$center);
             object-fit: cover;
         }
+        .imgPrincipalMainMobile{
+            display: none;
+        }
         .secciónPrincipal{
-            padding: 20px 30px;
-            line-height: 1.5;
-            font-weight: 400;  
+            padding: 20px 80px;
+            text-align: justify;
+            line-height: 2;
+            font-weight: bold;  
+        }
+        .gallery{
+            padding: 30px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .colorFondoMain{
+        .row{
+            .imgPrincipalMain{
+            display: none;
+            }
+            .imgPrincipalMainMobile{
+                width: 100%;
+                height: 50vh;
+                z-index: 9;
+                margin: 0 auto;
+                padding: 2% 5%;
+                @include flex(column,$center,$center);
+                object-fit: cover;
+            }
+            .secciónPrincipal{
+                padding: 20px 30px;
+                line-height: 1.5;
+                font-weight: 400;  
+            }
         }
     }
 }
