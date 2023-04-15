@@ -121,6 +121,7 @@ body {
 
 .container-fluid {
   padding: 0;
+  padding-right: 0.7%;
 }
 
 .navbar {
@@ -345,6 +346,7 @@ body {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .forms .btn-primary {
@@ -499,10 +501,10 @@ body {
     background-image: url(../assets/img/error_chica.jpg);
   }
   .bgImage404 .txt404 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .bgImage404 .txt404 .h404 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
 
