@@ -364,7 +364,7 @@ body {
 
 @media (max-width: 768px) {
   .forms {
-    margin-left: auto;
+    margin-bottom: 3rem;
   }
   .map {
     width: 300px;
