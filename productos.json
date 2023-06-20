@@ -1,0 +1,92 @@
+[
+    {
+    "codigo": 1,
+    "nombre": "Taladro",
+    "nombreMinusculas": "taladro",
+    "descripcion": "Black & Decker 750W 13mm",
+    "stock": 5,
+    "precio": 10000,
+    "img": "../assets/img/Taladro black & decker 10mm 550w.png"
+    },
+    {
+    "codigo": 2,
+    "nombre": "Taladro",
+    "nombreMinusculas": "taladro",
+    "descripcion": " Black & Decker 500W 10mm ",
+    "stock": 6,
+    "precio": 8000,
+    "img": "../assets/img/Taladro black & decker 13mm 710w.png"
+    },
+    {
+    "codigo": 3,
+    "nombre": "Taladro",
+    "nombreMinusculas": "taladro",
+    "descripcion": " De Walt 1100W 13mm ",
+    "stock": 4,
+    "precio": 20000,
+    "img": "../assets/img/Taladro De Walt 1100w.png"
+    },
+    {
+    "codigo": 4,
+    "nombre": "Amoladora",
+    "nombreMinusculas": "amoladora",
+    "descripcion": " Black & Decker 1100W disco 4,5mm ",
+    "stock": 10,
+    "precio": 13000,
+    "img": "../assets/img/Amoladora B&D.png"
+    },
+    {
+    "codigo": 5,
+    "nombre": "Amoladora",
+    "nombreMinusculas": "amoladora",
+    "descripcion": " DeWalt 1800W disco 7mm ",
+    "stock": 5,
+    "precio": 30000,
+    "img": "../assets/img/Amoladora De Walt.png"
+    },
+    {
+    "codigo": 6,
+    "nombre": "Mascara Fotosensible",
+    "nombreMinusculas": "mascara",
+    "descripcion": "Lusqtoff St-mistery Automatica",
+    "stock": 12,
+    "precio": 10000,
+    "img": "../assets/img/Caretafotosensible.jpg"
+    },
+    {
+    "codigo": 7,
+    "nombre": "Juego de llaves tubo",
+    "nombreMinusculas": "llaves tubo",
+    "descripcion": "1/2 pulgada 13 piezas marca Bremen",
+    "stock": 10,
+    "precio": 29000,
+    "img": "../assets/img/JuegoLlavesTubo12.jpg"
+    },
+    {
+    "codigo": 8,
+    "nombre": "Cadena de seguridad",
+    "nombreMinusculas": "cadena",
+    "descripcion": "Acero Cementado 3/8 X 1 M Bulit + Candado 72mm",
+    "stock": 8,
+    "precio": 31000,
+    "img": "../assets/img/Cadena.jpg"
+    },
+    {
+    "codigo": 9,
+    "nombre": "Cartucho Gas Butano",
+    "nombreMinusculas": "cartucho",
+    "descripcion": "Pack X 4 u.Descartable 227gr p/ anafe tipo camping",
+    "stock": 42,
+    "precio": 4000,
+    "img": "../assets/img/Gasbutano.jpg"
+    },
+    {
+    "codigo": 10,
+    "nombre": "Barbijo",
+    "nombreMinusculas": "barbijo",
+    "descripcion": "Respirador Mascarilla N95 3m X 5 Unidades",
+    "stock": 130,
+    "precio": 3500,
+    "img": "../assets/img/Barbijo3MN95.jpg"
+    }
+]

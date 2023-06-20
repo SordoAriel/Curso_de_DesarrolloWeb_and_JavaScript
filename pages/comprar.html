@@ -48,21 +48,19 @@
                     <form id="productSearch" class="productSearch">
                         <input type="name" placeholder="Buscar...">
                         <button type="submit" id="searchProductBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div id="quantityProductsFound"></div>
                     </form>
                     <div class="cartIcon" id="cartIcon">
-                        <button id="cartButton"> <i class="fa-solid fa-cart-shopping"></i> </button>
                         <span id="itemsNumberInCart">0</span>
+                        <button id="cartButton"> <i class="fa-solid fa-cart-shopping"></i> </button>
+                        <div id="showProductsInCart" class="showProductsInCart"></div>
                     </div>
                 </div>
-                <div  id="quantityProductsMessage" class="quantityProductsMessage">
-
-                </div>
-                <div class="catalogoProductos" id="catalogoProductos">
-                    
-                </div>
-                <div id="cartsProducts">
-
-                </div>
+                <div  id="quantityProductsMessage" class="quantityProductsMessage"></div>
+            </div>
+            <div class="principal row" id="principal">
+                <div class="catalogoProductos col" id="catalogoProductos"></div>
+                
             </div>
         </main>
         <footer class="propiedadesGeneralesFooter container-fluid">
@@ -97,7 +95,8 @@
                 </nav>
             </div>              
         </footer>
-        <script src="../js/main.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/main.js"></script>
     </body>
 </html>

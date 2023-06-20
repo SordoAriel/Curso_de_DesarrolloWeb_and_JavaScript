@@ -346,6 +346,27 @@ body {
   text-align: center;
 }
 
+/*.showProductsInCart{
+    width: 95%;
+    padding: 10px;
+    background-color: antiquewhite;
+    border: 2px solid rgb(41, 39, 39);
+}
+*/
+.noResultsFound {
+  padding: 100px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.cartDisplay {
+  border: solid 1px rgb(27, 27, 27);
+}
+
 .catalogoProductos {
   display: flex;
   flex-direction: row;
@@ -388,62 +409,71 @@ body {
   background-color: #afa0a0;
 }
 
-.carouselContainer {
-  margin: 0 auto;
-  width: 100%;
+.cartDisplay {
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.cartDisplay h2 {
+  margin: 10px;
+  text-align: center;
+  border-bottom: solid 1px rgb(87, 87, 87);
+}
+
+.listStyle {
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  list-style: none;
+  border-bottom: solid 1px rgb(87, 87, 87);
+  line-height: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.listItem img {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.listItem button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  background-color: #afa0a0;
+}
+
+.listItem button i {
+  color: rgb(41, 39, 39);
+  font-size: 1.5rem;
+}
+
+.listItem button:hover {
+  border: 1px solid rgb(87, 87, 87);
+}
+
+.endBtn {
+  width: 95%;
+  height: 40px;
+  border: 2px solid rgb(87, 87, 87);
+  border-radius: 20px;
+  background-color: #afa0a0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.carouselContainer .carousel-item {
-  margin-top: 10px;
-  height: 90vh;
-}
-.carouselContainer .carousel-item .imgCarouselOffer {
-  margin: 0 auto;
-  margin-bottom: 10%;
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-  z-index: 5;
-}
-.carouselContainer .carousel-item .carousel-caption {
-  color: black;
-}
-.carouselContainer .carousel-item .buyingText {
-  padding: 5px;
-  font-weight: 600;
-  color: black;
-  text-decoration: none;
-  background-color: #d4d0d1;
-  border: solid black 1px;
-  border-radius: 20px;
-  z-index: 8;
-}
-.carouselContainer .carousel-item .buyingText .buyingLink {
-  color: black;
-  text-decoration: none;
-}
-.carouselContainer .carousel-item .buyingText:hover {
-  background-color: #a19d9e;
-  color: black;
-  border: solid black 2px;
+
+.endBtn:hover {
+  box-shadow: 5px 5px 5px 5px rgb(87, 87, 87);
 }
 
-@media (max-width: 992px) {
-  .carouselContainer .carousel-item {
-    height: 60vh;
-  }
-  .carouselContainer .carousel-item .imgCarouselOffer {
-    margin: 0 auto;
-    margin-top: 70px;
-    width: 80%;
-    height: 60%;
-    object-fit: cover;
-    z-index: 5;
-  }
-}
 /*Estilos Main Contacto*/
 .forms {
   margin-bottom: 15px;
